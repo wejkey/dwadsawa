@@ -27,7 +27,6 @@ class InternationalMCApp {
 
     startApplication() {
         this.isLoading = false;
-        this.addInitialAnimations();
         console.log('InternationalMC website initialized successfully');
     }
 
@@ -307,6 +306,10 @@ class InternationalMCApp {
         });
     }
 
+    initStatistics() {
+        // Reserved for future statistics implementation
+    }
+
     initScrollEffects() {
         const revealElements = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale');
         
@@ -329,25 +332,6 @@ class InternationalMCApp {
         
         revealElements.forEach(element => {
             revealObserver.observe(element);
-        });
-    }
-    
-    addInitialAnimations() {
-        const pluginCards = document.querySelectorAll('.plugin-card');
-        if (window.AnimationUtils) {
-            window.AnimationUtils.staggerAnimation(pluginCards, 'animate-in', 100);
-        }
-        
-        const sections = document.querySelectorAll('section');
-        sections.forEach((section, index) => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            
-            setTimeout(() => {
-                section.style.transition = 'all 0.8s ease-out';
-                section.style.opacity = '1';
-                section.style.transform = 'translateY(0)';
-            }, index * 200);
         });
     }
 

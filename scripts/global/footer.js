@@ -21,7 +21,7 @@ class FooterManager {
                 ],
                 legal: [
                     { name: 'Terms', url: './terms.html' },
-                    { name: 'License', url: './terms.html#license' }
+                    { name: 'License', url: '#' }
                 ]
             },
             social: [

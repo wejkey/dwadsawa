@@ -854,4 +854,27 @@
     flex-direction: column;
     gap: var(--spacing-xs);
   }
+  
+  .warning-card {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    text-align: center;
+    margin-top: var(--spacing-md);
+  }
+  
+  .warning-icon {
+    width: 50px;
+    height: 50px;
+    font-size: var(--fs-xl);
+    justify-self: center;
+  }
+  
+  .warning-title {
+    font-size: var(--fs-lg);
+  }
+  
+  .warning-description {
+    font-size: var(--fs-sm);
+  }
 }
