@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <!-- Essentials -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <title>InternationalMC - Home</title>
+    <meta name="description" content="Focusing on quality and performance">
+    <link rel="canonical" href="https://internationalmc.pages.dev">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="InternationalMC">
+    <meta property="og:description" content="Focusing on quality and performance">
+    <meta property="og:url" content="https://internationalmc.pages.dev">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/226872481?v=4">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="InternationalMC">
+    <meta name="twitter:description" content="Focusing on quality and performance">
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/226872481?v=4">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/226872481?v=4">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <!-- Preloads -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" as="style">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-cube nav-logo"></i>
+                <span class="nav-title">InternationalMC</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#plugins" class="nav-link">Plugins</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-gradient"></div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Welcome to</span>
+                    <span class="title-line highlight">InternationalMC</span>
+                </h1>
+                <p class="hero-description">
+                    Creating original Minecraft plugins with original ideas.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='#plugins'">
+                        <i class="fas fa-rocket"></i>
+                        Explore Plugins
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="code-title">plugin.yml</span>
+                    </div>
+                    <div class="code-content" id="codeContent">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Info Card -->
+    <section class="info">
+        <div class="container">
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="info-content">
+                    <h3 class="info-title">Development Update</h3>
+                    <p class="info-description">
+                        Development will be slowed down due to the school year. IMC appreciate your patience and understanding during this period.
+                    </p>
+                    <div class="info-dates">
+                        <div class="date-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Start: September 1, 2025</span>
+                        </div>
+                        <!--
+                        <div class="date-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>End: December 19, 2025</span>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plugins Section -->
+    <section class="plugins" id="plugins">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-subtitle">Resources</span>
+                    Coolest Plugins
+                </h2>
+                <p class="section-description">
+                    You're really interested, huh?
+                </p>
+            </div>
+            
+            <div class="plugins-filter">
+                <button class="filter-btn active" data-filter="all">Everything</button>
+                <button class="filter-btn" data-filter="plugins">Active Plugins</button>
+                <button class="filter-btn" data-filter="archive">Archive</button>
+
+            </div>
+            
+            <div class="plugins-grid" id="pluginsGrid">
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">
+                        <span class="section-subtitle">What is this</span>
+                        InternationalMC
+                    </h2>
+                    <p>
+                        Small Minecraft plugin development project. Always trying to make something new. Founded on August 20, 2025.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-code-branch feature-icon"></i>
+                            <div>
+                                <h4>Easy configuration</h4>
+                                <p>Every plugin comes with detailed, customizable configs.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-rocket feature-icon"></i>
+                            <div>
+                                <h4>Performance</h4>
+                                <p>Performance is priority.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-wand-magic-sparkles feature-icon"></i>
+                            <div>
+                                <h4>Trust</h4>
+                                <p>It's all new, but with time we aim to build trust and keep creating plugins for players.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <i class="fa-solid fa-wrench"></i>
+                            <a href="https://modrinth.com/user/International"><span>Modrinth</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">
+                        <span class="section-subtitle">Get In Touch</span>
+                        You can try here
+                    </h2>
+                    <p>You can join Discord, ask questions there, create issue on github or personally contact.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fab fa-discord contact-icon"></i>
+                            <div>
+                                <h4>Discord Server</h4>
+                                <p>Join our community for support</p>
+                                <a href="https://internationalmc.pages.dev/discord" class="contact-link">internationalmc.pages.dev/discord</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div>
+                                <h4>Email Support</h4>
+                                <p>If you want to contact us in different method</p>
+                                <a href="mailto:rewejkem@proton.me" class="contact-link">rewejkem@proton.me</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github contact-icon"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>Wikis, updates, issues</p>
+                                <a href="https://github.com/internationalmc" class="contact-link">github.com/InternationalMC</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>  
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+
+    <!-- Scripts -->
+    <script src="scripts/global/plugins.js"></script>
+    <script src="scripts/global/footer.js"></script>
+    <script src="scripts/utils/animations.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
